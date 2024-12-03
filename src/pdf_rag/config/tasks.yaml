@@ -1,0 +1,20 @@
+pdf_research_task:
+  description: >
+    Search through the provided PDF document to find relevant information about {topic}.
+    Use your document search expertise to identify and extract key passages and information.
+    Focus on finding the most pertinent content that answers the search query.
+  expected_output: >
+    A detailed list of relevant passages and information found in the document,
+    organized by importance and relevance to the topic.
+  agent: pdf_search_agent
+
+reporting_task:
+  description: >
+    Review the search results and findings from the document analysis.
+    Synthesize the information into a comprehensive and well-structured report.
+    Ensure all key points are expanded with proper context and explanation.
+  expected_output: >
+    A detailed analytical report covering all relevant findings from the document search,
+    organized into clear sections with proper analysis and insights.
+    Formatted as markdown without '```'
+  agent: reporting_analyst
